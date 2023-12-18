@@ -10,7 +10,7 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  // ваш код...
+  return typeof name === 'string' && name.trim().length >= 4 && !/\s/.test(name);
 }
 
 function sayHello() {
@@ -22,3 +22,5 @@ function sayHello() {
     print('Некорректное имя');
   }
 }
+
+sayHello();
